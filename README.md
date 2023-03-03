@@ -1,3 +1,3 @@
-# fortran Playground
+# FORTRAN Playground
 
 FORTRAN
