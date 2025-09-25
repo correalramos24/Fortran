@@ -1,0 +1,13 @@
+#####################################-YAW-######################################
+## TEMPLATE FOR BashRunner RUNNER
+## Required parameters:type bash_cmd
+type: BashRunner
+compile_sketch:
+  bash_cmd: gfortran -o bin.exe sbc_sketch.F90 nopenmp.F90 main.F90 -fopenmp
+  script_name: compile_sketch
+execute:
+  wrapper: time
+  args: 100 100 100 
+  bash_cmd: ./bin.exe
+  script_name: run_sketch
+#####################################-YAW-######################################
